@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Careers</title>
+</head>
+<body>
+   <form>
+    <h1>Player Information</h1>
+    <label for="name">Name : </label>
+    <input type="text" name="name" id="name"><br/>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="text" name="dob" id="dob"><br/>
+
+    <label for="imageUrl">Photo Url:</label>
+    <input type="text" name="imageUrl" id="imageUrl"><br/>
+
+    <label for="birthplace">Birthplace:</label>
+    <input type="text" name="birthplace" id="birthplace"><br/>
+
+    <label for="careerDesc">Career:</label>
+    <textarea rows="6" cols="10" type="text" name="careerDesc" id="careerDesc"></textarea><br/>
+
+    <label for="matches">Number Of Matches:</label>
+    <input type="number" name="matches" id="matches"><br/>
+
+    <label for="score">Score:</label>
+    <input type="number" name="score" id="score"><br/>
+
+    <label for="fifties">Fifties:</label>
+    <input type="number" name="fifties" id="fifties"><br/>
+
+    <label for="centuries">Centuries:</label>
+    <input type="number" name="centuries" id="centuries"><br/>
+
+    <label for="wickets">Wickets:</label>
+    <input type="number" name="wickets" id="wickets"><br/>
+
+    <label for="average">Average:</label>
+    <input type="number" step="0.01" name="average" id="average" /><br/>
+
+    <button type="submit" id="submit">Submit</button>
+    <button type="button" id="update" style="display: none;">Update</button><br/>
+   </form>
+
+   <div>
+    <form>
+        <input type="text" name="search-player" id="search-player" placeholder="Search a Player">
+        <button type="submit" id="search-btn">Search</button>
+    </form>
+   </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.3/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
